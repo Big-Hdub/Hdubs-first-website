@@ -1,0 +1,103 @@
+.interest-bar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr 0.75fr;
+    grid-template-areas:
+        "dog dog-text cat cat-text plug plug-text stock sun temp";
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    font-size: 8px;
+    padding: 10px 0;
+}
+
+.interest-images {
+    box-sizing: border-box;
+    padding-left: 20px;
+    max-width: 70%;
+}
+
+.interest-headers {
+    font-weight: bolder;
+}
+
+.interest-text {
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+#dog {
+    grid-area: dog;
+    align-self: center;
+}
+
+#dog-text {
+    grid-area: dog-text;
+    width: auto;
+}
+
+#cat {
+    grid-area: cat;
+    align-self: center;
+    border-left: 1px solid #e2e2e2;
+}
+
+#cat-text {
+    grid-area: cat-text;
+    width: auto;
+}
+
+#plug {
+    grid-area: plug;
+    align-self: center;
+    border-left: 1px solid #e2e2e2;
+}
+
+#plug-text {
+    grid-area: plug-text;
+    width: auto;
+}
+
+#stock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 12px;
+    font-weight: bold;
+    grid-area: stock;
+    width: auto;
+    border-left: 1px solid #e2e2e2;
+    padding: 0 20px;
+}
+
+.stocks {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#stock div:not(:last-child) {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.stocks p:not(:first-child) {
+    color: green;
+}
+
+#sun {
+    grid-area: sun;
+    align-self: center;
+    border-left: 1px solid #e2e2e2;
+}
+
+#temp {
+    grid-area: temp;
+    width: auto;
+    align-self: center;
+    font-weight: 900;
+    font-size: 12px;
+    justify-self: center;
+}
+
+@media (width<1000px) {
+    .interest-bar {
+        display: none;
+    }
+}

@@ -1,0 +1,123 @@
+.masthead {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "top-left top-right top-right"
+        ". middle-middle ."
+        "bottom-left bottom-middle bottom-right";
+}
+
+.masthead__menu-and-search {
+    grid-area: top-left;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.masthead__actions {
+    grid-area: top-right;
+    display: inline-flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.masthead__technologies {
+    grid-area: middle-middle;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.tech-links {
+    font-size: 10px;
+    color: #6f6f6f;
+    text-transform: uppercase;
+    border-top: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    position: relative;
+    background-color: white;
+    top: 1px;
+}
+
+.tech-links>span {
+    margin: 0px 8px;
+}
+
+.masthead__date {
+    display: inline-flex;
+    grid-area: bottom-left;
+    justify-content: left;
+    align-items: end;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.masthead__logo {
+    grid-area: bottom-middle;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 0px;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.masthead__paper {
+    display: inline-flex;
+    grid-area: bottom-right;
+    justify-content: right;
+    align-items: end;
+    padding-bottom: 11px;
+    padding-right: 20px;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.fa-newspaper {
+    display: inline-flex;
+    gap: 7px;
+}
+
+.bottom-corner-text {
+    font-size: 11px;
+}
+
+.top-left-buttons {
+    font-size: 11px;
+    padding: 7px 9px;
+}
+
+.top-left-buttons:hover {
+    background-color: #f7f7f5;
+}
+
+.gear-icon {
+    font-size: 11px;
+    padding: 7px 9px;
+}
+
+.gear-icon:hover {
+    background-color: #f7f7f5;
+}
+
+.top-right-button {
+    background-color: #6288a5;
+    border-radius: 3px;
+    padding: 7px 9px;
+    margin: 0 4px;
+    text-transform: uppercase;
+}
+
+.top-right-button:hover {
+    transition-duration: .3s;
+    background-color: #326891;
+}
+
+/* @media (width<800) {
+    .top-right-button {
+        font-size: 5px;
+    }
+} */
